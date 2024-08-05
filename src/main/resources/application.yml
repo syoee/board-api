@@ -1,0 +1,17 @@
+---
+spring:
+  application:
+    name: board-api
+---
+
+---
+spring:
+  profiles:
+    active: local
+---
+
+---
+spring:
+  profiles:
+    active: dev
+---
