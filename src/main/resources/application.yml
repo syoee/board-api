@@ -8,6 +8,20 @@ spring:
 spring:
   profiles:
     active: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/board?allowPublicKeyRetrieval=true&userSSL=false&serverTimezone=UTC&userLegacyDatetimeCode=false
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 3
+      leak-detection-threshold: 100000
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: mysql
+    show-sql: true
 ---
 
 ---
