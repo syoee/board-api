@@ -22,6 +22,14 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
     database: mysql
     show-sql: true
+
+cors:
+  allowed:
+    pattern: "/**"
+    credentials: true
+    methods: [ "*" ]
+    headers: [ "*" ]
+    origin-patterns: [ "http://localhost:*" ]
 ---
 
 ---
